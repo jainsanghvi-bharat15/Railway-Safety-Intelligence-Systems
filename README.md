@@ -29,8 +29,8 @@ This project combines FRA Railroad Accident & Incident data (USA) and Indian Rai
 
 ## Datasets
 
-- FRA Railroad Accident & Incident Data (USA)
-- Indian Railways Accidents (1902–2024)
+- FRA Railroad Accident & Incident Data (USA) : https://www.kaggle.com/datasets/chrico03/railroad-accident-and-incident-data?utm_source=chatgpt.com
+- Indian Railways Accidents (1902–2024) : https://www.kaggle.com/datasets/siddhanthkumardas/indian-railways-accidents-1902-2024?utm_source=chatgpt.com
 - Railway Safety Fund Data
 - Railway Rescue Time Data
 
