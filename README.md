@@ -1,11 +1,16 @@
 # Railway Safety Intelligence System
-
-An end-to-end Data Analytics and Machine Learning project focused on improving railway safety through accident analysis, risk assessment, and predictive intelligence.
-
-This project combines FRA Railroad Accident & Incident data (USA) and Indian Railway Accident data to identify accident trends, root causes, high-risk locations, and operational safety challenges. Using Python, SQL, Power BI, Machine Learning, and SHAP Explainable AI, the project delivers actionable insights for railway authorities and decision-makers.
-
-## Repository Contents
-
+ 
+Railway accidents don't just happen -they follow patterns. This project started with that assumption and ended up uncovering a lot of them.
+ 
+Built around two real-world datasets -FRA Railroad Accident & Incident data from the USA and Indian Railway accident records -this is an end-to-end Data Analytics and ML project aimed at making sense of where, why, and how railway accidents occur. The goal was never just to build models, but to surface insights that railway authorities and decision-makers could actually act on.
+ 
+The stack includes Python, SQL, Power BI, Scikit-Learn, and SHAP Explainable AI. 
+The analysis covers everything from raw data cleaning to geographic hotspot detection to interactive dashboards.
+ 
+---
+ 
+## What's Inside
+ 
 - Data Cleaning & Preprocessing
 - Exploratory Data Analysis (EDA)
 - SQL Analytics
@@ -15,57 +20,49 @@ This project combines FRA Railroad Accident & Incident data (USA) and Indian Rai
 - Geographic Hotspot Detection
 - Power BI Dashboard
 - Project Report
-
-
-## Key Highlights
-
-- Analyzed 217,000+ FRA railway accident records
-- Integrated Indian Railway accident, rescue time, and safety fund datasets
-- Performed data cleaning, preprocessing, and feature engineering
-- Conducted exploratory data analysis (EDA) and SQL-based investigations
-- Built machine learning models for accident severity and risk analysis
-- Applied SHAP Explainable AI for model interpretability
-- Identified geographic accident hotspots using geospatial analysis
-- Developed interactive Power BI dashboards for executive decision-making
-- Generated data-driven recommendations to improve railway safety
-
-## Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- SQL
-- Power BI
-- Scikit-Learn
-- SHAP
-- Excel
-
-## 🚀 How to Run This Project
-
-### 📋 Prerequisites
-
-Ensure the following software is installed on your system:
-
-* Python 3.10+
-* Microsoft Power BI Desktop
-* Microsoft Excel
-* VS Code or Jupyter Notebook (Optional)
-
 ---
-
-### 📦 Required Python Libraries
-
-Install all required dependencies:
-
+ 
+## What This Project Does
+ 
+- Digs into 217,000+ FRA railway accident records to find patterns that aren't obvious at first glance
+- Pulls in Indian Railway datasets covering accidents, rescue times, and safety fund allocation
+- Cleans and prepares both datasets for consistent analysis
+- Runs EDA and SQL-based investigations to explore accident trends and root causes
+- Builds ML models to predict accident severity and flag high-risk scenarios
+- Uses SHAP to explain what the models are actually picking up on -not just what they predict
+- Maps accident hotspots geographically to identify the most dangerous corridors and zones
+- Packages everything into Power BI dashboards for executive-level visibility
+---
+ 
+## Technologies Used
+ 
+Python · Pandas · NumPy · SQL · Power BI · Scikit-Learn · SHAP · Excel
+ 
+---
+ 
+## Getting Started
+ 
+### Prerequisites
+ 
+Make sure you have the following installed before anything else:
+ 
+- Python 3.10+
+- Microsoft Power BI Desktop
+- Microsoft Excel
+- VS Code or Jupyter Notebook *(optional but recommended)*
+---
+ 
+### Installing Dependencies
+ 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn shap openpyxl xgboost
 ```
-
+ 
 ---
-
-### 📁 Project Structure
-
-```text
+ 
+### Project Structure
+ 
+```
 Railway-Safety-Intelligence-System
 │
 ├── Data_Cleaning_FRA.py
@@ -78,30 +75,26 @@ Railway-Safety-Intelligence-System
 ├── Project Report.pdf
 └── README.md
 ```
-
+ 
 ---
-
-### 📊 Dataset Setup
-
-Download the datasets from Kaggle:
-
-#### FRA Railroad Accident & Incident Data (USA)
-
+ 
+### Dataset Setup
+ 
+Download the datasets from Kaggle and place them in the project directory. Update file paths in the scripts if your folder structure differs.
+ 
+**FRA Railroad Accident & Incident Data (USA)**
 https://www.kaggle.com/datasets/chrico03/railroad-accident-and-incident-data
-
-#### Indian Railways Accidents (1902–2024)
-
+ 
+**Indian Railways Accidents (1902–2024)**
 https://www.kaggle.com/datasets/siddhanthkumardas/indian-railways-accidents-1902-2024
-
-Place the downloaded files inside the project directory and update file paths in the Python scripts if necessary.
-
+ 
 ---
-
-### ▶️ Execution Order
-
-Run the following scripts sequentially:
-
-```text
+ 
+### Running the Project
+ 
+Run the scripts in this order -each one builds on the previous:
+ 
+```
 1. Data_Cleaning_FRA.py
 2. Indian_Dataset_Cleaning.py
 3. EDA_Railway_Safety.py
@@ -109,44 +102,40 @@ Run the following scripts sequentially:
 5. ML_Model.py
 6. Explainable_AI.py
 ```
-
+ 
 ---
-
-### 📈 Power BI Dashboard
-
-1. Open `Dashboard_P2.pbix` in Power BI Desktop.
-2. If prompted, update the dataset source paths.
-3. Click **Refresh**.
-4. Explore the interactive dashboards and insights.
-
+ 
+### Power BI Dashboard
+ 
+1. Open `Dashboard_P2.pbix` in Power BI Desktop
+2. Update dataset source paths if prompted
+3. Hit **Refresh**
+4. Explore the dashboards
 ---
-
-### 📂 Outputs Generated
-
-The project generates:
-
-* Cleaned Datasets
-* Data Quality Reports
-* EDA Visualizations
-* SQL Analysis Results
-* Machine Learning Models & Predictions
-* SHAP Explainability Visuals
-* Geographic Hotspot Analysis
-* Interactive Power BI Dashboard
-
+ 
+### What Gets Generated
+ 
+Once everything runs, you'll have:
+ 
+- Cleaned versions of both datasets
+- Data quality reports
+- EDA visualizations
+- SQL analysis outputs
+- Trained ML models and predictions
+- SHAP explainability plots
+- Geographic hotspot analysis
+- The fully interactive Power BI dashboard
 ---
-
-### ⚠️ Notes
-
-* The FRA dataset contains over 217,000 records and may require higher RAM for processing.
-* Ensure dataset file paths are configured correctly before execution.
-* Power BI dashboards are built using the cleaned datasets generated by the Python preprocessing scripts.
-* For best performance, run the project in a virtual environment with all dependencies installed.
-
+ 
+### A Few Things to Keep in Mind
+ 
+- The FRA dataset is large (217,000+ records) -running it in a virtual environment with sufficient RAM is strongly recommended
+- Double-check dataset file paths before kicking off the scripts
+- The Power BI dashboard pulls from the cleaned datasets produced by the preprocessing scripts, so run those first
+- A virtual environment keeps dependency conflicts out of the picture
 ---
-
-### 👨‍💻 Author
-
+ 
+## Author
+ 
 **Bharat Jain Sanghvi**
-
-Data Analytics | SQL | Python | Power BI | Machine Learning
+Data Analytics · SQL · Python · Power BI · Machine Learning
